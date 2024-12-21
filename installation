@@ -1,0 +1,20 @@
+premothesus installation:
+commands:
+wget https://github.com/prometheus/prometheus/releases/download/v2.45.0/prometheus-2.45.0.linux-amd64.tar.gz
+tar -xvzf prometheus-*.tar.gz
+cd prometheus-*/
+./prometheus --config.file=prometheus.yml
+ http://localhost:9090.
+
+
+grafana installation:
+sudo apt-get install -y software-properties-common
+sudo add-apt-repository "deb https://packages.grafana.com/oss/deb stable main"
+sudo apt-get update
+sudo apt-get install grafana
+
+if face any error to installation:
+curl https://packages.grafana.com/gpg.key | sudo apt-key add -
+sudo apt-get update
+sudo apt-get install grafana.
+ http://localhost:3000.
